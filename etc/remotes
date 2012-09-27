@@ -1,0 +1,1 @@
+smtp.gmail.com smtp --port=587 --starttls --user= --pass=
