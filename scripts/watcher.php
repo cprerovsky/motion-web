@@ -1,6 +1,8 @@
 #!/usr/bin/php
 <?php
-$IPS = file('../conf/watchips');
+// supply ips to check for as arguments
+$IPS = $argv;
+array_shift($IPS);
 $PID = '/var/run/motion/motion.pid'; // motion pid file
 $found = false; // has a device been found?
 for ($i = 0; $i < count($IPS); $i++) {
